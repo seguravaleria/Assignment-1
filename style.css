@@ -2,3 +2,57 @@ html, body {
   height: 100%;
   width: 100%;
 }
+html, body{
+  background-color: beige;
+}
+.grid-container{
+  background-color:white;
+  border-radius:10px;
+  display:grid;
+  grid-template-areas:
+    "a a a a a"
+    "c c b b b"
+    "c c b b b"
+    "d d d d d";
+  gap:3px;
+  grid-template-columns:repeat(5,1fr)
+  grid-template-rows:repeat(5,90%)
+  padding:3px
+  
+}
+.h{
+  grid-area:a;
+}
+
+.m{
+  grid-area:b;
+}
+
+.n{
+  grid-area:c;
+}
+
+.f{
+  grid-area:d;
+}
+
+page 2
+
+ol.topic{
+  list-style-type; upper-roman;
+}
+ul.basics{
+  list-style-type: lower-roman;
+}
+ul.css{
+  list-style-type: lower-roman;
+}
+ul.style{
+  list-style-type: lower-roman;
+}
+
+table,th,td{
+  border-block: 3px solid;
+  border-block-end: 3px solid;
+  border-block-color: purple;
+}
