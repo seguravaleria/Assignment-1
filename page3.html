@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Page 3</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="grid-container">
+  
+  <header class="h">
+    <h1 style="font-size: 60px;">Assignments!
+  <img src="images/principal.jpg" height="180"></h1> 
+    <h2>Hello everyone!</h2>
+  </header>
+
+<nav class="n"
+  <ul>
+  <li><a href="index.html">Home page</a></li>
+  <li><a href="page1.html">Page 1</a></li>
+  <li><a href="page2.html">Page 2</a></li> 
+  <li><a href="page3.html">Page 3</a></li>
+  <li><a href="https://www.columbusstate.edu/">CSU Page</a></li>
+  </ul>
+  </nav>
+
+    
+  <main class="m">
+  <h3 style="font-family: courier;">Registration Form</h3>
+
+<form name="RegistrationForm" action="/action_page.php" onsumbit="return validateForm()" method="post">
+
+   <label for ="fname"  style="font-family:courier;">* First Name:</label>
+  <input type="text" id="fname" name="fname" placeholder="Enter first name here" maxlength="50"><br>
+  <br>
+
+  
+  <label for ="lastname"  style="font-family:courier;">*Last name:</label>
+  <input type="text" id="lastname" name="lastname" placeholder="Enter last name here" maxlength="50"><br>
+  <br>
+
+  <label for="year"  style="font-family:courier;">*Birth Year:</label>
+  <input type="number" id="year" name="year" max="2022" min="1900"><br>
+  <br>
+
+  <label for="email"   style="font-family:courier;">*Email: </label>
+  <input type="email" id="email" name="email" placeholder="Enter a valid email here" ><br>
+  <br>
+
+  <label for="number" style="font-family:courier;">* Phone Number: </label>
+  <input type="tel" class="masked" placeholder="+## (###) ### ###" pattern="+/d{2} (/d{3}) /d{3} /d{4}" id="tel" name="tel"><br>
+  <br>
+
+   <label for="username"  style="font-family:courier;"> *Username:</label>
+  <input type="text" minlength="5" maxlength="10" id="username" name="username" name="username" required>
+  <br>
+
+  <label for="password1"  style="font-family:courier;"> *Password:</label>
+  <input type="password" minlength="8" id="password1" name="password1" required><br>
+  <br>
+
+  <label for="password2"  style="font-family:courier;"> *Confirm Password:</label>
+  <input type="password" id="password2" name="password2"><br>
+  
+  <br>
+
+  <input type="submit" value="submit" onclick="matchPassword()" onclick="validation()" style="font-family:courier;"><br>
+  </main>
+    
+  <footer class="f">
+    <p> Assignment created by Valeria Castro Segura</p>
+    <p id="modified" style="font-family:courier;"></p>
+  </footer>
+
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -10,10 +10,10 @@ html, body{
   border-radius:10px;
   display:grid;
   grid-template-areas:
-    "a a a a a"
-    "c c b b b"
-    "c c b b b"
-    "d d d d d";
+    "a a a a "
+    "c c b b "
+    "c c b b "
+    "d d d d ";
   gap:3px;
   grid-template-columns:repeat(5,1fr)
   grid-template-rows:repeat(5,90%)
@@ -50,13 +50,17 @@ ul.css{
 ul.style{
   list-style-type: lower-roman;
 }
+.diff{
+  background-color: lightcoral;
+}
 
 table{
   width: 100%;
   border:1px solid
 }
 th{
-  background-color:blueviolet;
+  background-color:black;
+  font-family: serif;color:white;
 }
 .atributtes{
   list-style-type: lower-roman;
