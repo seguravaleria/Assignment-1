@@ -1,37 +1,34 @@
-window.onload=init;
-  function init(){
-    addLastUpdate();
+
+//function that helps password and retype password are equal on page 3
+
+function validationForm(){
+  return validationPassword() && validationUser();
 }
 
-function addLastUpdate(){
-  const date = new 
-Date(document.lastModified);
-  
-document.getElementById("modified").innerHTML="Last modified: " + date.toDateString();
-}
-
-
-
-function matchPassword() {
-  var password1 = document.getElementById("password1");
-  var password2 = document.getElementById("password2");
-  if(password1 != password2)
-  {
+//Validation function for form on page 3
+//valids that password and confirm password are equal
+//for registration form on page 3
+function validationPassword() {
+  var password1 = document.getElementById("password1").value;
+  var password2 = document.getElementById("password2").value;
+  if(password1 !== password2){
   alert("Passwords do not match");
-  }else{
-  alert("Passwords created successfully");
+    return false;
+  } else {
+    return true;
   }
 }
 
-
-function validation() {
-  let username = document.getElementById("username");
-  let listNames = ["Harry", "Elizabeth", "Shana"];
-
-  for (let i =0; i <listNames.length; i++){
-    if (listNames[i] === username.value){
-      alert("The username already exist")
-    }
+//validation function for form on page 3
+//function for validation of the username
+function validationUser(){
+  var users =["Harry","Elizabeth","Shana"];
+  var uname = document.forms["regForm"]["username"].value;
+  if (users.includes(uname)){
+    alert("Username is not avaliable");
+    return false;
+  } else{
+    return true;
   }
-  return false;
 }
+

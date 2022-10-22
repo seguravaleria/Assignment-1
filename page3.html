@@ -30,43 +30,52 @@
   <main class="m">
   <h3 style="font-family: courier;">Registration Form</h3>
 
-<form name="RegistrationForm" action="/action_page.php" onsumbit="return validateForm()" method="post">
+<form 
+  action="https://webdevbasics.net/scripts/yoga.php" method="post" name="regForm" onsubmit="return validationForm()">
 
-   <label for ="fname"  style="font-family:courier;">* First Name:</label>
-  <input type="text" id="fname" name="fname" placeholder="Enter first name here" maxlength="50"><br>
+  
+   <label for ="fname" >* First Name:</label>
+  <input type="text" id="fname" name="fname" placeholder="Enter first name here" size="50" maxlength="50"><br>
   <br>
 
   
-  <label for ="lastname"  style="font-family:courier;">*Last name:</label>
-  <input type="text" id="lastname" name="lastname" placeholder="Enter last name here" maxlength="50"><br>
+  <label for ="lastname">*Last name:</label>
+  <input type="text" id="lastname" name="lastname" placeholder="Enter last name here" size="50" maxlength="50"><br>
   <br>
+  
 
-  <label for="year"  style="font-family:courier;">*Birth Year:</label>
+  <label for="year" >*Birth Year:</label>
   <input type="number" id="year" name="year" max="2022" min="1900"><br>
   <br>
 
-  <label for="email"   style="font-family:courier;">*Email: </label>
+  
+  <label for="email" >*Email: </label>
   <input type="email" id="email" name="email" placeholder="Enter a valid email here" ><br>
   <br>
 
-  <label for="number" style="font-family:courier;">* Phone Number: </label>
-  <input type="tel" class="masked" placeholder="+## (###) ### ###" pattern="+/d{2} (/d{3}) /d{3} /d{4}" id="tel" name="tel"><br>
-  <br>
+  
 
-   <label for="username"  style="font-family:courier;"> *Username:</label>
-  <input type="text" minlength="5" maxlength="10" id="username" name="username" name="username" required>
+  <label for="number">* Phone Number: </label>
+  <input type="tel" class="masked" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="tel" name="tel"><br>
   <br>
+  
 
-  <label for="password1"  style="font-family:courier;"> *Password:</label>
+   <label for="username"> *Username:</label>
+  <input type="text" placeholder="Enter username here" minlength="5" maxlength="10" id="username" name="username" name="username" required>
+  <br>
+  
+
+  <label for="password1"> *Password:</label>
   <input type="password" minlength="8" id="password1" name="password1" required><br>
   <br>
 
-  <label for="password2"  style="font-family:courier;"> *Confirm Password:</label>
-  <input type="password" id="password2" name="password2"><br>
+  <label for="password2"> *Confirm Password:</label>
+  <input type="password" id="password2" name="password2" required><br>
   
   <br>
 
-  <input type="submit" value="submit" onclick="matchPassword()" onclick="validation()" style="font-family:courier;"><br>
+  <input type="submit" value="submit">
+</form>
   </main>
     
   <footer class="f">
