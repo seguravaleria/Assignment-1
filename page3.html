@@ -18,10 +18,10 @@
 
 <nav class="n"
   <ul>
-  <li><a href="index.html">Home page</a></li>
-  <li><a href="page1.html">Page 1</a></li>
-  <li><a href="page2.html">Page 2</a></li> 
-  <li><a href="page3.html">Page 3</a></li>
+  <li><a href="index.html" tabindex="1">Home page</a></li>
+  <li><a href="page1.html" tabindex="2">Page 1</a></li>
+  <li><a href="page2.html" tabindex="3">Page 2</a></li> 
+  <li><a href="page3.html" tabindex="4">Page 3</a></li> 
   <li><a href="https://www.columbusstate.edu/">CSU Page</a></li>
   </ul>
   </nav>
@@ -35,46 +35,46 @@
 
   
    <label for ="fname" >* First Name:</label>
-  <input type="text" id="fname" name="fname" placeholder="Enter first name here" size="50" maxlength="50"><br>
+  <input type="text" id="fname" name="fname" placeholder="Enter first name here" size="50" maxlength="50" tabindex="5"><br>
   <br>
 
   
   <label for ="lastname">*Last name:</label>
-  <input type="text" id="lastname" name="lastname" placeholder="Enter last name here" size="50" maxlength="50"><br>
+  <input type="text" id="lastname" name="lastname" placeholder="Enter last name here" size="50" maxlength="50" tabindex="6"><br>
   <br>
   
 
   <label for="year" >*Birth Year:</label>
-  <input type="number" id="year" name="year" max="2022" min="1900"><br>
+  <input type="number" id="year" name="year" max="2022" min="1900" tabindex="7"><br>
   <br>
 
   
   <label for="email" >*Email: </label>
-  <input type="email" id="email" name="email" placeholder="Enter a valid email here" ><br>
+  <input type="email" id="email" name="email" placeholder="Enter a valid email here" tabindex="8"><br>
   <br>
 
   
 
   <label for="number">* Phone Number: </label>
-  <input type="tel" class="masked" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="tel" name="tel"><br>
+  <input type="tel" class="masked" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="tel" name="tel" tabindex="9"><br>
   <br>
   
 
    <label for="username"> *Username:</label>
-  <input type="text" placeholder="Enter username here" minlength="5" maxlength="10" id="username" name="username" name="username" required>
+  <input type="text" placeholder="Enter username here" minlength="5" maxlength="10" id="username" name="username" name="username" tabindex="10" required>
   <br>
   
 
   <label for="password1"> *Password:</label>
-  <input type="password" minlength="8" id="password1" name="password1" required><br>
+  <input type="password" minlength="8" id="password1" name="password1" tabindex="11"ed><br>
   <br>
 
   <label for="password2"> *Confirm Password:</label>
-  <input type="password" id="password2" name="password2" required><br>
+  <input type="password" id="password2" name="password2" tabindex="12" requiredd><br>
   
   <br>
 
-  <input type="submit" value="submit">
+  <input type="submit" value="submit" tabindex="13">
 </form>
   </main>
 
