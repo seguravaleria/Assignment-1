@@ -32,3 +32,17 @@ function validationUser(){
   }
 }
 
+
+//This is the code to validate the canvas code on page 1 
+
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+///Set up for first text of my canva in page 2
+ctx.fillStyle ="purple";
+ctx.font = "30px Arial";
+ctx.fillText("Hello Everyone",10,100);
+
+//Set up for my second text of my canva in page 2 
+ctx.font = "Bold 30px Sans-Serif";
+ctx.strokeText("This is my Canva",40,50);
+

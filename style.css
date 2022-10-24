@@ -1,3 +1,4 @@
+
 html, body {
   height: 100%;
   width: 100%;
@@ -11,10 +12,10 @@ html, body{
   display:grid;
   grid-template-areas:
 
-    "a a a a "
-    "c c b b "
-    "c c b b "
-    "d d d d ";
+    "a a a a a a a a"
+    "c c b b e e e e"
+    "c c b b e e e e"
+    "d d d d d d d d";
   gap:3px;
   grid-template-columns:repeat(5,1fr)
   grid-template-rows:repeat(5,90%)
@@ -36,6 +37,9 @@ html, body{
 .f{
   grid-area:d;
 }
+.a{
+  grid-area:e;
+}
 
 page 2
 
@@ -51,26 +55,93 @@ ul.css{
 ul.style{
   list-style-type: lower-roman;
 }
-<<<<<<< HEAD
 .diff{
   background-color: lightcoral;
 }
 
+/*Style color for table on page 2*/
 table{
   width: 100%;
   border:1px solid
 }
+
 th{
-  background-color:black;
+  background-color:purple;
   font-family: serif;color:white;
 }
 .atributtes{
   list-style-type: lower-roman;
-=======
+
 
 table,th,td{
   border-block: 3px solid;
   border-block-end: 3px solid;
   border-block-color: purple;
->>>>>>> origin/main
 }
+
+/*Style to set up canvas on page 1*/ 
+canvas{
+  height: 200%;
+  width: 100%;
+  border:1px solid purple;
+  
+}
+
+
+/*Style to set up the svg graph in page 3*/
+svg{
+  width: 180%;
+  height: 100%;
+  stroke:black;
+  stroke-width: 1px;
+  fill-rule: evenodd;
+  
+}
+/*Style to set up #############3*/
+*{
+  box-sizing:border-box;
+}  
+.nav{
+  padding: 8px;  
+  float:left;
+  width: 20%;
+  margin-top: 7px;
+}
+.main{
+  float: left;
+  padding: 0 20px;
+  width: 20%;
+  overflow: hidden;
+}
+
+.aside{
+  padding:10px 15px;
+  float: left;
+  margin-top: 7px;
+  width:20%;
+}
+
+.footer{
+  padding: 10px;
+  text-align: center;
+  color:pink;
+}
+/*layout for tablets*/
+@media screen and (max-width:800px){
+  .main{
+   width: 80%;
+  padding:0;
+  }
+  .aside{
+    width: 100%;
+  }
+}
+/*Layout for phones*/
+@media screen and (max-width:500px){
+  .main, .nav, .aside,{
+    width: 100%;
+  }
+}
+
+
+
